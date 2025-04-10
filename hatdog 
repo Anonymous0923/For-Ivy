@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Love Letter for Aybe</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #fddde6, #faaca8);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+      flex-direction: column;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .envelope-wrapper {
+      position: relative;
+      width: 300px;
+      perspective: 1000px;
+      cursor: pointer;
+      transition: all 0.8s ease;
+    }
+
+    .envelope-wrapper.opened {
+      transform: scale(1.15);
+    }
+
+    .envelope {
+      width: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 1s;
+    }
+
+    .envelope.open {
+      transform: rotateX(180deg);
+    }
+
+    .front, .back {
+      position: absolute;
+      width: 100%;
+      min-height: 150px;
+      backface-visibility: hidden;
+      border: 2px solid #e63946;
+      border-radius: 8px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .front {
+      background: #fff0f3;
+    }
+
+    .front img.sticker {
+      width: 120px;
+      height: auto;
+    }
+
+    .back {
+      background: #ffffff;
+      transform: rotateX(180deg);
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .message {
+      display: none;
+      max-width: 90%;
+      margin-top: 20px;
+      font-size: 1rem;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      white-space: pre-line;
+      overflow-y: auto;
+      max-height: 60vh;
+    }
+
+    .show-message {
+      display: block;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .buttons button {
+      padding: 8px 16px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #ff6f91;
+      color: #fff;
+      transition: background 0.3s ease;
+    }
+
+    .buttons button:hover {
+      background-color: #ff4d6d;
+    }
+
+    .music-player {
+      display: none;
+      margin-top: 20px;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .show-player {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My short lab letah por yu</h1>
+  <p>Tap the envelope to open it</p>
+  <p> huwag kang tatawa</p>
+
+  <div class="envelope-wrapper" id="envelopeWrapper" onclick="openEnvelope()">
+    <div class="envelope" id="envelope">
+      <div class="front">
+        <img src="https://media.tenor.com/2eWmvMR3ZGkAAAAC/love-letter-envelope.gif" alt="Envelope Sticker" class="sticker">
+      </div>
+      <div class="back">To: My Baby Aybe</div>
+    </div>
+  </div>
+
+  <div id="message" class="message">
+Haiii Aybeee!! aybeee? huh? Baby pala😌 you must be wondering ba't iisa lang, sooooo, napag isipan ko na yung short letters ko everyday ay isesend ko lang kapag nasagot mo na ako. Napaisip kasi ako na aprang masyadong maaga pa tsaka onti pa lang yung letters HAHAHAHA spoiler: jar siya na may stars tapos yung stars yung letter ko sa'yo. Simulan ko na ba? Seyi segi HAHAHAH isu summary ko na lang yung letters ko simula March 26 - April 9/10. Nung unang umaga na suitor mo na ako ansaya saya ko 😆 kasi yun na 'yung araw na magsisimula ako na manligaw sa'yo pero nakaka ano💔 ikaw yung unang nag good morning imbis na sa'kin WAAAHHHHH WHYYYY🥹 kemi. Kinagabihan non ehh nilagay ko sa diary ko lahat lahat ng gusto kong ilagay (bakit ba🙄) ang ganda ng topic natin nun ehh😆 hawakan ng cocomelons (Nakakaselos po, opo). Tapos alam mo ba? syempre hindi, nung exam na 'yun ikaw na lang iniisip ko yung tipong sinasabihan na ako ng tc namin ba't ako nakangit ng ganiyan😭. Ang saya haha, waitt, hindi na ata 'to love letter 🙂️ kwento na ata (wapakels). Fast forward tayo sa this week kasi gusto ko ehhh masyado kasing mahaba mga letter ko sa mga ibang days. This week, lalo ako na fa fall sa'yo kasi 🦅🦅🦅🦅 tinatawag mo'ko na baby🥹 masyado akong mababaw HAHAHAHA yung tipong kahit nagtatampo ako sa'yo na ganiyan pero kaoag tinawag mo ako na baby ehh okay na ako kaso gusto pa rin kitang asarin kasi akala mo nagtatampo pa ako hahaah. You never fail to make me laugh, feel loved, tapos bine baby mo rin ako😆.
+    
+  I never thought that I will be loved againbor wasn't enough to be loved  y someone like you. Pero baamm😵💫, bigla kang nag spawn sa buhay ko, showed me na I'm worthy to receive the kind of love I've ever dreamt😫. Ngayon, sinabi ko sa sarili ko na "I love you so much that I would never, would never ever let you na iwan ako. Funny pero true😌, sa short time na pag uusap natin ehh una friends then, like tapos now, I love you." Araw araw, gumising ako na ikaw lagi yung iniisip, nagpapasalamat kay papa God kapag nag p-pray ako pag gising sinasabi ko ba naman na "Papa God, I want to spend the rest of my life with this precious girl, the best gift appa God HAHAHAHA". Myghad, dapat mababa lang to ehh kasi sasabihin ko lang naman na 'di ko na isesend yung website na "Jar of Love" ko😓. 
+ 
+Para mag end na 'tong message, thankyou kasi umabot ka rito kahit mediyo cringe na🥴. Even though we're miles apart, you'll still be my one and only baby Aybe. Kahit pa mag overthink ka na baka may mahanap akong iba ehhh 'di ko gagawin 'yon. Imma tell you a one but not that popular quote "Loving you might not be the easiest, simplest, sweetest, and the most beautiful decision I've ever made".  Even though you're so so so maldita sometimes I won' regret my decision lovin' you. Again, I'm sorry kung 'di po ito yung inexpect mong letter hehe. But, this letter of mine was made by my heart's sincerity. Actually, feel ko nga wala pa akong nagawang act na nagpapakita na nililigawan kita🥲 
+- Jarren -
+  </div>
+
+  <div class="buttons">
+    <button onclick="resetEnvelope()">Back</button>
+    <button onclick="toggleMusic()">Music Area</button>
+  </div>
+
+<div class="music-player" id="musicPlayer" style="display: none;">
+  <iframe 
+    id="musicFrame"
+    width="100%" 
+    height="152" 
+    src="" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+<script>
+  function openEnvelope() {
+    document.getElementById('envelope').classList.add('open');
+    document.getElementById('envelopeWrapper').classList.add('opened');
+    document.getElementById('message').classList.add('show-message');
+
+    // Autoplay with sound now
+    document.getElementById('musicFrame').src = "https://www.youtube.com/embed/PEMfTdCA8VY?autoplay=1";
+  }
+
+  function resetEnvelope() {
+    document.getElementById('envelope').classList.remove('open');
+    document.getElementById('envelopeWrapper').classList.remove('opened');
+    document.getElementById('message').classList.remove('show-message');
+    document.getElementById('musicPlayer').style.display = "none";
+    document.getElementById('musicFrame').src = ""; // Stop music
+  }
+
+  function toggleMusic() {
+    const player = document.getElementById('musicPlayer');
+    player.style.display = player.style.display === "none" ? "block" : "none";
+  }
+</script>
+
+</body>
+</html>
